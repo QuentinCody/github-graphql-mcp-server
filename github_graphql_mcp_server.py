@@ -4,6 +4,10 @@ import httpx
 import json
 import logging
 from typing import Any, Dict, Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO,
