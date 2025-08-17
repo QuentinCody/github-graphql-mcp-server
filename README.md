@@ -1,5 +1,7 @@
 # GitHub GraphQL MCP Server
 
+[![QuentinCody/github-graphql-mcp-server context](https://badge.forgithub.com/QuentinCody/github-graphql-mcp-server?accept=text%2Fhtml&maxTokens=50000&ext=py)](https://uithub.com/QuentinCody/github-graphql-mcp-server?accept=text%2Fhtml&maxTokens=50000&ext=py)
+
 A Model Context Protocol (MCP) server that provides access to GitHub's GraphQL API. This server exposes a single tool that allows executing arbitrary GraphQL queries and mutations against GitHub's API.
 
 ## Features
@@ -184,4 +186,11 @@ If you encounter issues:
 
 **`Error: GitHub token not found in environment variables`**
 - The server couldn't find your GitHub token
+
 - Solution: Make sure you've set the GITHUB_TOKEN environment variable
+
+## License
+
+[MIT](LICENSE)
+=======
+
