@@ -51,7 +51,8 @@ GITHUB_TOKEN=your_github_token_here python github_graphql_mcp_server.py
 Add the following to your Claude Desktop configuration file:
 
 ```json
-"github-graphql": {
+{
+  "github-graphql": {
     "command": "/absolute/path/to/your/.venv/bin/python",
     "args": [
         "/absolute/path/to/github_graphql_mcp_server.py"
@@ -62,6 +63,7 @@ Add the following to your Claude Desktop configuration file:
     "env": {
         "GITHUB_TOKEN": "your_github_token_here"
     }
+  }
 }
 ```
 
@@ -119,7 +121,7 @@ query SearchRepos($query: String!, $first: Int!) {
 Variables:
 ```json
 {
-  "query": "language:python stars:>1000",
+  "query": "language:python stars:1000",
   "first": 5
 }
 ```
@@ -184,8 +186,11 @@ If you encounter issues:
 
 **`Error: GitHub token not found in environment variables`**
 - The server couldn't find your GitHub token
+
 - Solution: Make sure you've set the GITHUB_TOKEN environment variable
 
 ## License
 
 [MIT](LICENSE)
+=======
+
