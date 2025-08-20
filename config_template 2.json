@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "github-graphql": {
+            "command": "/absolute/path/to/your/.venv/bin/python",
+            "args": [
+                "/absolute/path/to/github_graphql_mcp_server.py"
+            ],
+            "options": {
+                "cwd": "/absolute/path/to/repository",
+                "env_file": ".env.local"
+            }
+        }
+    }
+} 
